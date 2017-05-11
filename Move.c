@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "Move.h"
 
 int move(int numOfRemain)
 {
@@ -31,5 +32,8 @@ int move(int numOfRemain)
     }
     if (91 < numOfRemain && numOfRemain <= 100){
         return numOfRemain - 91;
+    }
+    if (numOfRemain % 10 == 1){
+        return getrand(1, 10);
     }
 }
