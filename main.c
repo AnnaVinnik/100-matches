@@ -1,6 +1,7 @@
 #include <stdio.h>
 #define max_matches 100
 #include "random.h"
+#include "Move.h"
 
 
 int main ()
@@ -19,7 +20,7 @@ int main ()
         printf ("In the table %d matches \n", ost);
 
     if (ost > 0){
-        take = getrand(1, 9);
+        take = move(ost);
         ost = ost - take;
         player = player + 1;
         printf ("Computer has made its move\n");
