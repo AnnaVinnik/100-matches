@@ -22,15 +22,15 @@ int main ()
         take = getrand(1, 9);
         ost = ost - take;
         player = player + 1;
-        printf ("Компьютер сделал свой ход \n");
+        printf ("Computer has made its move\n");
         printf ("In the table %d matches \n\n", ost);
     }
 }
 
     if (player%2 == 0){
-        printf ("Вы проиграли\n");
+        printf ("You lost!\n");
     } else {
-        printf( "Вы выиграли\n");
+        printf( "You won!\n");
     }
     return 0;
 }
