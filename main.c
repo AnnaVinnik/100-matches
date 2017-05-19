@@ -1,7 +1,8 @@
 #include <stdio.h>
 #define max_matches 100
 #include "random.h"
-
+#include "Move.h"
+#include "check.h"
 
 int main ()
 {
@@ -14,12 +15,16 @@ int main ()
     for (;ost > 0;){
         printf ("How many matches You take? \n");
         scanf("%d", &take);
+        for (;check(take) != 1 ;){
+            printf ("Enter a number between 1 and 10\n");
+            scanf("%d", &take);
+        }
         ost = ost - take;
         player = player + 1;
         printf ("In the table %d matches \n", ost);
 
     if (ost > 0){
-        take = getrand(1, 9);
+        take = move(ost);
         ost = ost - take;
         player = player + 1;
         printf ("Computer has made its move\n");
@@ -27,7 +32,7 @@ int main ()
     }
 }
 
-    if (player%2 == 0){
+    if (player % 2 == 0){
         printf ("You lost!\n");
     } else {
         printf( "You won!\n");
