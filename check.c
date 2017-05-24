@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctest.h>
 
 int check(int take)
 {
