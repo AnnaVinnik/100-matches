@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "Move.h"
 #include "random.h"
-#include <ctest.h>
+
 
 int move(int numOfRemain)
 {
