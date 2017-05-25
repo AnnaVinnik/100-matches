@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "ctest.h"
-#include "deposit.h"
+#include "Move.h"
+#include "check.h"
 
 CTEST(numOfRemain , test1)
 {
