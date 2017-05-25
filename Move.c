@@ -2,7 +2,6 @@
 #include "Move.h"
 #include "random.h"
 
-
 int move(int numOfRemain)
 {
     if (1 < numOfRemain && numOfRemain <= 10){

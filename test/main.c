@@ -1,6 +1,4 @@
 #define CTEST_MAIN
-#include "Move.h"
-#include "check.h"
 #include <stdio.h>
 #include <ctest.h>
 
