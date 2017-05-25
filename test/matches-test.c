@@ -21,12 +21,12 @@ CTEST(numOfRemain, test3)
 
 CTEST(Check, test1)
 {
-	ASSERT_EQUAL(1, proverka(7));
+	ASSERT_EQUAL(1, check(7));
 }
 
 CTEST(Check, test2)
 {
-	ASSERT_EQUAL(0, proverka(10);
+	ASSERT_EQUAL(0, check(10));
 }
 
 
