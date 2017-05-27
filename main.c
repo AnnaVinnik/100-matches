@@ -3,6 +3,7 @@
 #include "random.h"
 #include "Move.h"
 #include "check.h"
+#include <ctype.h>
 
 int main ()
 {
@@ -13,10 +14,17 @@ int main ()
     printf ("You move. In the table %d matches \n", ost);
     for (;ost > 0;){
         printf ("How many matches You take? \n");
-        scanf("%d", &take);
-        for (;check(take) != 1 ;){
-            printf ("Enter a number between 1 and 10\n");
-            scanf("%d", &take);
+        if (scanf("%d", &take) == 1){
+            for (;check(take) != 1 ;){
+                printf ("Enter a number between 1 and 10\n");
+                scanf("%d", &take);
+            }
+        }
+        else {
+            for (;scanf("%d", &take) != 1 || check(take) != 1;){
+                scanf("%*[^\n]");
+                printf("Enter a number between 1 and 10 \n");
+            }
         }
         ost = ost - take;
         player = player + 1;
