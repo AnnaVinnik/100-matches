@@ -37,4 +37,5 @@ int move(int numOfRemain)
     if (numOfRemain % 10 == 1){
         return getrand(1, 10);
     }
+    return 0;
 }

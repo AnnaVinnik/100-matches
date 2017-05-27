@@ -1,14 +1,13 @@
 #include <stdio.h>
-#define max_matches 100
+#define maxMatches 100
 #include "random.h"
 #include "Move.h"
 #include "check.h"
 
 int main ()
 {
-    int player = 1, ost, take, y;
-    double k;
-    ost = max_matches;
+    int player = 1, ost, take;
+    ost = maxMatches;
 
 
     printf ("You move. In the table %d matches \n", ost);
