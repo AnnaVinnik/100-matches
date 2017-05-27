@@ -40,7 +40,7 @@ int main ()
 }
 
     if (player % 2 == 0){
-        printf ("You lost!\n");
+        printf ("You lost! :(\n");
     } else {
         printf( "You won!\n");
     }
